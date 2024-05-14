@@ -1,0 +1,93 @@
+.nav-gradient {
+  background: linear-gradient(to right, #ff8c00, #eb5eeb);
+}
+
+.bg-gradient {
+  background: linear-gradient(to right, #95f1a2, #cbb0fb);
+  color: #fff;
+  padding: 50px 0;
+}
+
+#hero {
+  background: linear-gradient(45deg, #f0d2ad, #ed94ed 100%);
+  color: white; /* Set text color to white for better contrast */
+}
+
+#hero h1,
+#hero p {
+  color: white; /* Set text color to white for better contrast */
+}
+
+/* All button takes gradient color scheme */
+.btn-primary {
+  background: linear-gradient(to right, #ff8c00, #800080);
+  border-color: transparent;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #ff6347, #8a2be2);
+  border-color: transparent;
+}
+
+/* Align social media icons horizontally */
+.social-media {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust spacing between icons */
+}
+
+/* Style social media icons */
+.social-media a {
+  color: #000; /* Change icon color as needed */
+  font-size: 24px;
+}
+
+/* Change color of social media icons on hover */
+.social-media a:hover {
+  color: #ff8c00; /* Change to your desired hover color */
+}
+
+.card-gradient {
+  background: linear-gradient(to right, #cec4b9, #f3edf3);
+}
+
+footer {
+  background: linear-gradient(to right, #ff8c00, #800080);
+  color: white;
+  padding: 40px 0;
+}
+
+footer h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  color: #ffcc80; /* Hover color remains the same as before */
+}
