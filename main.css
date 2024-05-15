@@ -31,11 +31,6 @@ body {
   height: 100px;
 }
 
-.img i {
-  font-size: 3rem;
-  color: #007bff;
-}
-
 .text p:first-child {
   font-size: 2rem;
   font-weight: bold;
