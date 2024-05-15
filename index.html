@@ -28,7 +28,10 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="#" style="font-family: cursive"
+        <a
+          class="navbar-brand fw-bold"
+          href="index.html"
+          style="font-family: cursive"
           >CodeWave Solutions</a
         >
         <button
@@ -45,14 +48,45 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Courses</a>
+            <li
+              class="nav-item dropdown"
+              onmouseover="showDropdown()"
+              onmouseout="hideDropdown()"
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="coursesDropdown"
+                role="button"
+                aria-expanded="false"
+              >
+                Courses
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="coursesDropdown"
+                id="coursesMenu"
+              >
+                <!-- Course 1 -->
+                <li><a class="dropdown-item" href="#">Java Full Stack</a></li>
+                <!-- Course 2 -->
+                <li><a class="dropdown-item" href="#">Data Science</a></li>
+                <!-- Course 3 -->
+                <li><a class="dropdown-item" href="#">Data Analytics</a></li>
+                <!-- Course 4 -->
+                <li><a class="dropdown-item" href="#">Python Full Stack</a></li>
+                <!-- Course 5 -->
+                <li><a class="dropdown-item" href="#">Mean Stack</a></li>
+                <!-- Course 6 -->
+                <li><a class="dropdown-item" href="#">Mern Stack</a></li>
+                <!-- Add more courses as needed -->
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
+              <a class="nav-link" href="about.html">About</a>
+            </li> 
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Registration</a>
@@ -153,7 +187,10 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-md-4">
             <div class="card shadow fw-bold border-0 mb-sm-4 mb-4">
-              <div class="text p-4 d-flex gap-3" style="background-color: #d2e4ee;">
+              <div
+                class="text p-4 d-flex gap-3"
+                style="background-color: #d2e4ee"
+              >
                 <div class="text">
                   <p style="font-size: 16px">Java Full Stack</p>
                   <p style="font-size: 12px">
@@ -162,49 +199,74 @@
                   </p>
                 </div>
                 <div>
-                  <i class="fa-brands fa-java fa-2xl" style="color: #B197FC;"></i>
+                  <i
+                    class="fa-brands fa-java fa-2xl"
+                    style="color: #b197fc"
+                  ></i>
                 </div>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-outline-info">Know More <i class="fa-solid fa-arrow-right ml-3"></i></a>
+                <a href="#" class="btn btn-outline-info"
+                  >Know More <i class="fa-solid fa-arrow-right ml-3"></i
+                ></a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card shadow fw-bold border-0 mb-sm-4 mb-4">
-              <div class="text p-4 d-flex gap-3" style="background-color: #d2e4ee;">
+              <div
+                class="text p-4 d-flex gap-3"
+                style="background-color: #d2e4ee"
+              >
                 <div class="text">
                   <p style="font-size: 16px">Data Science</p>
                   <p style="font-size: 12px">
-                    Description of the Data Science. Get Hands on with
-                    our best mentors.
+                    Description of the Data Science. Get Hands on with our best
+                    mentors.
                   </p>
                 </div>
                 <div>
-                  <img src="ds-logo.jpeg" alt="logo" width="75px" style="mix-blend-mode: multiply;">
+                  <img
+                    src="ds-logo.jpeg"
+                    alt="logo"
+                    width="75px"
+                    style="mix-blend-mode: multiply"
+                  />
                 </div>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-outline-info">Know More <i class="fa-solid fa-arrow-right ml-3"></i></a>
+                <a href="#" class="btn btn-outline-info"
+                  >Know More <i class="fa-solid fa-arrow-right ml-3"></i
+                ></a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card shadow fw-bold border-0 mb-sm-4 mb-4">
-              <div class="text p-4 d-flex gap-3" style="background-color: #d2e4ee;">
+              <div
+                class="text p-4 d-flex gap-3"
+                style="background-color: #d2e4ee"
+              >
                 <div class="text">
                   <p style="font-size: 16px">Data Analytics</p>
                   <p style="font-size: 12px">
-                    Description of the Data Analytics. Get Hands on with
-                    our best mentors.
+                    Description of the Data Analytics. Get Hands on with our
+                    best mentors.
                   </p>
                 </div>
                 <div>
-                  <img src="da.png" alt="" width="75px" style="mix-blend-mode: multiply;">
+                  <img
+                    src="da.png"
+                    alt=""
+                    width="75px"
+                    style="mix-blend-mode: multiply"
+                  />
                 </div>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-outline-info">Know More <i class="fa-solid fa-arrow-right ml-3"></i></a>
+                <a href="#" class="btn btn-outline-info"
+                  >Know More <i class="fa-solid fa-arrow-right ml-3"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -213,58 +275,86 @@
         <div class="row justify-content-center">
           <div class="col-md-4">
             <div class="card shadow fw-bold border-0 mb-sm-4 mb-4">
-              <div class="text p-4 d-flex gap-3" style="background-color: #d2e4ee;">
+              <div
+                class="text p-4 d-flex gap-3"
+                style="background-color: #d2e4ee"
+              >
                 <div class="text">
                   <p style="font-size: 16px">Python Full Stack</p>
                   <p style="font-size: 12px">
-                    Description of the Python Full Stack Course. Get Hands on with
-                    our best mentors.
+                    Description of the Python Full Stack Course. Get Hands on
+                    with our best mentors.
                   </p>
                 </div>
                 <div>
-                  <i class="fa-brands fa-python fa-2xl" style="color: #B197FC;"></i>
+                  <i
+                    class="fa-brands fa-python fa-2xl"
+                    style="color: #b197fc"
+                  ></i>
                 </div>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-outline-info">Know More <i class="fa-solid fa-arrow-right ml-3"></i></a>
+                <a href="#" class="btn btn-outline-info"
+                  >Know More <i class="fa-solid fa-arrow-right ml-3"></i
+                ></a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card shadow fw-bold border-0 mb-sm-4 mb-4">
-              <div class="text p-4 d-flex gap-3" style="background-color: #d2e4ee;">
+              <div
+                class="text p-4 d-flex gap-3"
+                style="background-color: #d2e4ee"
+              >
                 <div class="text">
                   <p style="font-size: 16px">Mean Stack</p>
                   <p style="font-size: 12px">
-                    Description of the Mean Stack Course. Get Hands on with
-                    our best mentors.
+                    Description of the Mean Stack Course. Get Hands on with our
+                    best mentors.
                   </p>
                 </div>
                 <div>
-                  <img src="Mean.jpeg" width="75px" alt="" style="mix-blend-mode: multiply;">
+                  <img
+                    src="Mean.jpeg"
+                    width="75px"
+                    alt=""
+                    style="mix-blend-mode: multiply"
+                  />
                 </div>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-outline-info">Know More <i class="fa-solid fa-arrow-right ml-3"></i></a>
+                <a href="#" class="btn btn-outline-info"
+                  >Know More <i class="fa-solid fa-arrow-right ml-3"></i
+                ></a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card shadow fw-bold border-0">
-              <div class="text p-4 d-flex gap-3" style="background-color: #d2e4ee;">
+              <div
+                class="text p-4 d-flex gap-3"
+                style="background-color: #d2e4ee"
+              >
                 <div class="text">
                   <p style="font-size: 16px">Mern Stack</p>
                   <p style="font-size: 12px">
-                    Description of the Mern Stack Course. Get Hands on with
-                    our best mentors.
+                    Description of the Mern Stack Course. Get Hands on with our
+                    best mentors.
                   </p>
                 </div>
                 <div>
-                  <img src="mern.png" alt="" height="40px" style="mix-blend-mode: multiply;">
+                  <img
+                    src="mern.png"
+                    alt=""
+                    height="40px"
+                    style="mix-blend-mode: multiply"
+                  />
                 </div>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-outline-info">Know More <i class="fa-solid fa-arrow-right ml-3"></i></a>
+                <a href="#" class="btn btn-outline-info"
+                  >Know More <i class="fa-solid fa-arrow-right ml-3"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -304,7 +394,7 @@
           </div>
           <div class="col-md-3">
             <div class="card mb-4 shadow border-0">
-              <img src="" class="card-img-top" alt="Course 3" />
+              <img src="img-1.png" class="card-img-top" alt="Course 3" />
               <div class="card-body">
                 <h5 class="card-title text-primary">Course Title 3</h5>
                 <p class="card-text text-muted">Description of course 3.</p>
@@ -315,35 +405,10 @@
         </div>
         <!-- Second Row -->
         <div class="row justify-content-center">
-          <div class="col-md-3">
-            <div class="card mb-4 shadow border-0">
-              <img src="course4.jpg" class="card-img-top" alt="Course 4" />
-              <div class="card-body">
-                <h5 class="card-title text-primary">Course Title 4</h5>
-                <p class="card-text text-muted">Description of course 4.</p>
-                <a href="#" class="btn btn-outline-info">Enroll Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card mb-4 shadow border-0">
-              <img src="course5.jpg" class="card-img-top" alt="Course 5" />
-              <div class="card-body card-gradient">
-                <h5 class="card-title text-primary">Course Title 5</h5>
-                <p class="card-text text-muted">Description of course 5.</p>
-                <a href="#" class="btn btn-outline-info">Enroll Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="card mb-4 shadow border-0">
-              <img src="course6.jpg" class="card-img-top" alt="Course 6" />
-              <div class="card-body card-gradient">
-                <h5 class="card-title text-primary">Course Title 6</h5>
-                <p class="card-text text-muted">Description of course 6.</p>
-                <a href="#" class="btn btn-outline-info">Enroll Now</a>
-              </div>
-            </div>
+          <div class="col-md-3 mt-2 text-center">
+            <a href="#" class="btn btn-success"
+                  >See All Courses <i class="fa-solid fa-arrow-right ml-3"></i
+                ></a>
           </div>
         </div>
       </div>
@@ -402,7 +467,10 @@
     </footer>
 
     <!-- Bootstrap JS and custom scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script defer src="script.js">
+      </scriptt>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <link
