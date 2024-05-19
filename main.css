@@ -1,4 +1,4 @@
-body {
+.myBody {
   font-family: sans-serif;
   font-size: 18px;
 }
@@ -11,11 +11,6 @@ body {
 
 #hero {
   background: linear-gradient(45deg, #f0d2ad, #ed94ed 100%);
-  color: white; /* Set text color to white for better contrast */
-}
-
-#hero p {
-  color: white; /* Set text color to white for better contrast */
 }
 
 .overview {
@@ -48,12 +43,12 @@ body {
 }
 
 .course-gradient {
-  background: linear-gradient(to right, #ffffff, #f3e3e3);
+  background: linear-gradient(to left, #f5d0a9, #e7b75f);
   padding: 40px 0;
 }
 
 .course-category {
-  background: linear-gradient(to right, #ffffff, #f3e3e3);
+  background: linear-gradient(to left, #f5d0a9, #e7b75f);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -77,18 +72,18 @@ body {
 
 .social-media li {
   display: inline-block;
-  margin-right: 10px; /* Adjust spacing between icons */
+  margin-right: 10px;
 }
 
 /* Style social media icons */
 .social-media a {
-  color: #000; /* Change icon color as needed */
+  color: #000;
   font-size: 24px;
 }
 
 /* Change color of social media icons on hover */
 .social-media a:hover {
-  color: #ff8c00; /* Change to your desired hover color */
+  color: #ff8c00;
 }
 
 footer {
