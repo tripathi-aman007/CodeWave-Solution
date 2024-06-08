@@ -17,11 +17,6 @@
       .navbar-nav {
         margin: auto;
       }
-      .bg-gradient {
-        background: linear-gradient(to right, #ff7e5f, #3f565a);
-        color: #fff;
-        padding: 50px 0;
-      }
     </style>
   </head>
   <body class="myBody">
@@ -30,9 +25,9 @@
       <div class="container-fluid">
         <a
           class="navbar-brand fw-bold"
-          style="font-family: cursive; color: orange;"
+          style="font-family: cursive; color: orange"
           href="index.html"
-          >CodeWave Solutions</a
+          >CodeWave <span>Solutions</span></a
         >
         <button
           class="navbar-toggler"
@@ -68,13 +63,21 @@
                 id="coursesMenu"
               >
                 <!-- Course 1 -->
-                <li><a class="dropdown-item" href="javaFullStack.html">Java Full Stack</a></li>
+                <li>
+                  <a class="dropdown-item" href="javaFullStack.html"
+                    >Java Full Stack</a
+                  >
+                </li>
                 <!-- Course 2 -->
                 <li><a class="dropdown-item" href="#">Data Science</a></li>
                 <!-- Course 3 -->
-                <li><a class="dropdown-item" href="#">Data Analytics</a></li>
+                <li>
+                  <a class="dropdown-item" href="dA.html">Data Analytics</a>
+                </li>
                 <!-- Course 4 -->
-                <li><a class="dropdown-item" href="#">Python Full Stack</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Python Full Stack</a>
+                </li>
                 <!-- Course 5 -->
                 <li><a class="dropdown-item" href="#">Mean Stack</a></li>
                 <!-- Course 6 -->
@@ -94,9 +97,9 @@
             <li class="nav-item">
               <a class="nav-link" href="ourTeam.html">Our Team</a>
             </li>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 ml-0">
               <li
-                class="nav-item dropdown"
+                class="nav-item dropdown ml-0"
                 onmouseover="showServices()"
                 onmouseout="hideServices()"
               >
@@ -129,7 +132,9 @@
             </ul>
           </ul>
           <form class="d-flex">
-            <button class="btn btn-secondary fs-5 border-0" type="submit">Login</button>
+            <button class="btn btn-secondary fs-5 border-0" type="submit">
+              Login
+            </button>
           </form>
         </div>
       </div>
@@ -138,13 +143,15 @@
     <!-- Hero Section -->
     <section id="hero" class="text-center py-4">
       <div class="container">
-        <h2>
+        <h2 style="font-weight: 100">
           Welcome to
-          <span class="fw-bold" style="color: orange; font-family: cursive;"
+          <span class="fw-bold" style="font-family: cursive"
             >CodeWave Solutions</span
           >
         </h2>
-        <p class="text-dark fs-5">Your gateway to quality online education.</p>
+        <p class="text-dark fs-5">
+          <u>Where lines of code become pathways to success for your career</u>.
+        </p>
         <!-- Add a call-to-action button if needed -->
         <!-- CTA Button -->
         <a href="#courses" class="btn btn-primary btn-lg border-0"
@@ -154,9 +161,7 @@
     </section>
 
     <!-- Overview -->
-    <div
-      class="container overview d-flex flex-column p-lg-5 gap-5 mt-4"
-    >
+    <div class="container overview d-flex flex-column p-lg-5 gap-5 mt-4">
       <!-- first -->
       <div class="card m-2 shadow rounded border-0">
         <div
@@ -294,7 +299,7 @@
                 </div>
               </div>
               <div class="card-body">
-                <a href="#" class="btn btn-outline-info"
+                <a href="dA.html" class="btn btn-outline-info"
                   >Know More <i class="fa-solid fa-arrow-right ml-3"></i
                 ></a>
               </div>
@@ -436,7 +441,7 @@
         <!-- Second Row -->
         <div class="row justify-content-center">
           <div class="col-md-3 mt-2 text-center">
-            <a href="#" class="btn btn-success" style="font-size: 20px;"
+            <a href="#" class="btn btn-success" style="font-size: 20px"
               >See All Courses <i class="fa-solid fa-arrow-right ml-3"></i
             ></a>
           </div>
