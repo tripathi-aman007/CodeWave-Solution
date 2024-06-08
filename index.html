@@ -94,9 +94,39 @@
             <li class="nav-item">
               <a class="nav-link" href="ourTeam.html">Our Team</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="project.html">Projects</a>
-            </li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+              <li
+                class="nav-item dropdown"
+                onmouseover="showServices()"
+                onmouseout="hideServices()"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  aria-expanded="false"
+                >
+                  Our Services
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="servicesDropdown"
+                  id="servicesMenu"
+                >
+                  <li>
+                    <a class="dropdown-item" href="corporateServices.html"
+                      >For Corporate</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="studentServices.html"
+                      >For Students</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </ul>
           <form class="d-flex">
             <button class="btn btn-secondary fs-5 border-0" type="submit">Login</button>
