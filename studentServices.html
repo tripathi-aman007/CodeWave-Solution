@@ -14,6 +14,32 @@
     />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="project.css" />
+
+    <style>
+      .container {
+        margin-top: 50px;
+      }
+
+      .project-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-title {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .card-text {
+        color: #666;
+      }
+    </style>
   </head>
   <body style="font-size: 18px">
     <!-- Navbar -->
@@ -85,38 +111,38 @@
               <a class="nav-link" href="ourTeam.html">Our Team</a>
             </li>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4 ml-0">
-                <li
-                  class="nav-item dropdown"
-                  onmouseover="showServices()"
-                  onmouseout="hideServices()"
+              <li
+                class="nav-item dropdown ml-0"
+                onmouseover="showServices()"
+                onmouseout="hideServices()"
+              >
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="servicesDropdown"
+                  role="button"
+                  aria-expanded="false"
                 >
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="servicesDropdown"
-                    role="button"
-                    aria-expanded="false"
-                  >
-                    Our Services
-                  </a>
-                  <ul
-                    class="dropdown-menu"
-                    aria-labelledby="servicesDropdown"
-                    id="servicesMenu"
-                  >
-                    <li>
-                      <a class="dropdown-item" href="corporateServices.html"
-                        >For Corporate</a
-                      >
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="studentServices.html"
-                        >For Students</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+                  Our Services
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="servicesDropdown"
+                  id="servicesMenu"
+                >
+                  <li>
+                    <a class="dropdown-item" href="corporateServices.html"
+                      >For Corporate</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="studentServices.html"
+                      >For Students</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </ul>
           <form class="d-flex">
             <button class="btn btn-secondary fs-5 border-0" type="submit">
@@ -128,59 +154,156 @@
     </nav>
 
     <!-- Projects Section -->
-    <section class="project-section">
-      <div class="container">
-        <h2 class="text-center mt-3 mb-5 fw-bold" style="font-size: 34px">
-          Services for College Students
-        </h2>
-            <p class="text-center mt-0 mb-5">
-              We are here to help students with their projects in following domain.
-              <a href="contact.html">Fill this contact form</a>
-            </p>
-        <div class="row">
-          <div class="col-lg-12 col-md-6">
-            <div class="project-card shadow border-0">
-              <div class="project-image d-flex justify-content-center mt-5">
-                <i class="fas fa-laptop-code fa-3x" style="color: orange;"></i>
-              </div>
-              <div class="project-details text-center">
-                <h3 class="project-title">Web Development</h3>
-                <p class="project-description">
-                  Providing cutting edge, customized website.
-                </p>    
-              </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Various end-to-end projects related to web development.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>E-commerce Website</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Building a fully functional online store with user
+                      authentication, product listings, and payment integration.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Blogging Website</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Creating a content management system where users can
+                      publish articles, comment, and interact.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Blogging Website</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Designing a personal portfolio to showcase projects,
+                      skills, and experiences.
+                    </p>
+                  </details>
+                </li>
+              </ol>
             </div>
           </div>
-          <div class="col-lg-12 col-md-6">
-            <div class="project-card shadow border-0">
-              <div class="project-image d-flex justify-content-center mt-5">
-                <i class="fab fa-wordpress-simple fa-3x" style="color: orange;"></i>
-              </div>
-              <div class="project-details text-center">
-                <h3 class="project-title">Wordpress Development</h3>
-                <p class="project-description">
-                  A brief description of the project highlighting.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-6">
-            <div class="project-card shadow border-0">
-              <div class="project-image d-flex justify-content-center mt-5">
-                <i class="fab fa-android fa-3x" style="color: orange;"></i>
-              </div>
-              <div class="project-details text-center">
-                <h3 class="project-title">Android Development</h3>
-                <p class="project-description">
-                  A brief description of the project highlighting.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Add more projects as needed -->
         </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title">Mobile App Development</h5>
+              <p class="card-text">
+                Various projects related to mobile app development.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>Chat Application</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Developing a real-time messaging app with features like
+                      group chats, media sharing, and notifications.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Fitness Tracker</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Creating an app to track physical activities, monitor
+                      health metrics, and set fitness goals.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Event Management</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Building an app for scheduling and managing events,
+                      including RSVP tracking and reminders.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card project-card">
+            <div class="card-body">
+              <h5 class="card-title">Data Science and Machine Learning</h5>
+              <p class="card-text">
+                Various projects related to data science and ML.
+              </p>
+              <ol class="list-group">
+                <li class="list-group-item">
+                  <details>
+                    <summary>Predictive Analytics</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Using machine learning to predict outcomes like house
+                      prices, stock prices, or customer churn.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Sentiment Analysis</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Analyzing social media posts or reviews to determine
+                      public sentiment using natural language processing.
+                    </p>
+                  </details>
+                </li>
+                <li class="list-group-item">
+                  <details>
+                    <summary>Recommendation System</summary>
+                    <p
+                      class="px-3 text-muted"
+                      style="font-weight: 200; font-size: 16px"
+                    >
+                      Developing systems like those used by Netflix or Amazon to
+                      recommend movies, products, or content based on user
+                      behavior.
+                    </p>
+                  </details>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!-- Add more columns for additional projects -->
       </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="py-4 bg-dark text-white">
